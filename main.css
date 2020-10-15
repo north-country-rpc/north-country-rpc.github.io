@@ -301,6 +301,9 @@ body {
     text-align: center;
     padding: 0px;
     pointer-events: none; }
+  .sticky th {
+    position: sticky;
+    top: 0; }
   .bed-table__open {
     background: #0077C8;
     color: #ffffff;
