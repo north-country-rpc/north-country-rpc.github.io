@@ -1,5 +1,5 @@
 # North Country SUD Treatment Bed Board
-A basic web app that uses Front-End web technologies to post and display the current *open* and *on hold* beds and Google Sheets to store the data for local behavioral health institutions. ------------>**PUT THE URL HERE**<-------------
+A basic web app that uses Front-End web technologies to post and display the current *open* and *on hold* beds and Google Sheets to store the data for local behavioral health institutions. [https://ncsudtxbeds.com](https://ncsudtxbeds.com)
 
 # IMPORTANT
 This is a fork of an existing repository.  [https://github.com/tpierce09/BHbeds](https://github.com/tpierce09/BHbeds).
