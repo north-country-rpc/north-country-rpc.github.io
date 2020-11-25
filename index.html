@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="media/favicon.ico">
   	<link rel="stylesheet" type="text/css" href="main.css?v=6">
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  	<link rel="stylesheet" type="text/css" href="custom.css">
   	<script src="js/jquery.min.js?v=2"></script>
 	<script src="js/handlebars.js?v=2"></script>
 
@@ -80,9 +81,9 @@
 <body>
 	<div class="background-shadow"></div>
 		<div class="container container--bed animate">
-			<div class="title-block" style="max-width: inherit;">
+			<div class="title-block">
 	  			<h1 class="title-block__header">North Country SUD Treatment Bed Finder</h1>
-	  			<div class="title-block__desc" style="margin: 0 20px;">
+	  			<div class="title-block__desc">
 	  				<p>The following information is provided through the collaboration of the North Country and Tug Hill Regional Planning Consortiums and North Country Behavioral Healthcare Network. While participating providers strive to keep this information current and update it several times per day, the reporting of open beds on this web page is NOT a guarantee of access. Admittance is dependent on multiple factors, including the level of care determined by the LOCADTR assessment tool.</p>
 	  					<p>View the <span class="is-bold">Glossary</span> below for more detailed information regarding definitions and the categories of treatment.</p>
 	  				<p class="alert"><span class="is-bold">North Country Region Counties: </span>Clinton, Franklin, Essex, Hamilton, Jefferson, Lewis, St. Lawrence, Warren and Washington.</p>
@@ -128,23 +129,17 @@
 
 		<footer class="rrh-footer animate">
 			<div class="rrh-footer__wrapper">
-				<div class="rrh-footer__logo">
-					<img class="logo-rrh" src="https://residency.rochesterregional.org/wp-content/uploads/2020/08/rrhlogo.png" alt="">
-					<img class="logo-partner" src="/media/RPC-logo.jpg" alt="">
+        <div class="rrh-footer__logo">
+          <a href="https://www.behaviorhealthnet.org" target="_blank"><img src="media/logo.png" height="75" width="75"></a>
+        </div>
+        <div class="rrh-footer__logo organization">
+            <a style="text-decoration: none;" href="https://www.behaviorhealthnet.org" target="_blank"><b>North Country Behavioral Healthcare Network & Management Services</b></a>
+        </div>
+
+        <div class="rrh-footer__logo" style="bottom: 8px;">
+          <a href="http://www.clmhd.org/rpc/" target="_blank"><img class="rpc-logo" src="media/RPC-logo.jpg" alt="RPC Logo" height="75" width="75"></a>
+        </div>
 				</div>
-				<ul class="rrh-footer__links">
-					<li>© <span id="current-year">2020</span> Rochester Regional Health</li>
-					<li><a target="_blank" href="https://www.rochesterregional.org/privacy-notice" rel="noopener noreferrer">Privacy Policy</a></li>
-					<li><a target="_blank" href="https://www.rochesterregional.org/disclaimer" rel="noopener noreferrer">Disclaimer</a></li>
-					<li><a target="_blank" href="https://www.rochesterregional.org/contact" rel="noopener noreferrer">Contact</a></li>
-					<li><a target="_blank" href="https://careers.rochesterregional.org" rel="noopener noreferrer">Careers</a></li>
-					<li><a href="https://www.rochesterregional.org#emailsignup" rel="noopener noreferrer">Sign Up for Our Emails</a></li>
-				</ul>
-		<div class="rrh-footer" style="padding-bottom: 40px;">
-      <a href="https://www.behaviorhealthnet.org" target="_blank"><img src="media/logo.png" height="75" width="75" style="position: relative; top: 19px;"></a>
-			<div class="rrh-footer__logo" style="max-width: 300px;">
-          <a style="text-decoration: none;" href="https://www.behaviorhealthnet.org" target="_blank"><b>North Country Behavioral Healthcare Network & Management Services</b></a>
-			</div>
 		</footer>
 
 		<div class="modal" data-modal-window  id="GlossaryModal">
