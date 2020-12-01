@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 // Get data from Google Sheet and post to page
 function populateList() {
-	let url = 'https://api.sheety.co/f4f2201dd61223d70a87eb8b4df9ac9c/fingerLakesBedBoard/organization';
+	let url = 'https://api.sheety.co/afa38f3a3b155559d0071d6ebf5d0ce7/ncThBedFinderGoogleSheet/organization';
+
 	fetch(url)
 	.then((response) => response.json())
 	.then(json => {
 		this.organization = json.organization;
 		var desktopTemplate = Handlebars.compile($('#item-template-desk').html())
 		var mobileTemplate = Handlebars.compile($('#item-template-mobile').html())
+
 		$('.loading').remove();
 		$('#items-desk').html(desktopTemplate(organization));
 		FetchTable();
@@ -38,7 +40,7 @@ function FetchTable() {
 function searchFilter(){
 	$("#bed-table-search").on("keyup", function() {
 		var value = $(this).val().toLowerCase();
-		
+
 		if ($(window).width() >= 992) {
 			$("#items-desk tr").filter(function() {
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
@@ -46,13 +48,13 @@ function searchFilter(){
 	        		$(this).css("background-color", !!(index & 1)? "rgba(0,0,0,0)" : "rgba(0,0,0,.05)");
 	    		});
 			});
-    	} 
-    	else{ 
+    	}
+    	else{
 			$("#items-mobile .bed-org").filter(function() {
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
 			});
-    	}	
-	});   
+    	}
+	});
 };
 searchFilter();
 
@@ -68,9 +70,9 @@ $('#currentYear').text(new Date().getFullYear());
 
 modals.init({
 	preventBGScroll: true,
-	preventBGScrollHtml: true, 
-	preventBGScrollBody: true, 
-	backspaceClose: true, 
+	preventBGScrollHtml: true,
+	preventBGScrollBody: true,
+	backspaceClose: true,
 });
 
 //if you click on anything except the modal__content itself, close the modal
